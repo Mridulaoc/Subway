@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Subway</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <!-- Navbar starts here  -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white fixed-top">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">
+            <img src="images\logo.webp" alt="Bootstrap" width="100" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images\logo.webp" alt="Bootstrap" width="100" height="50"></h5>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-md-end align-items-md-center align-items-start flex-grow-1 pe-1">
+                <li class="nav-item selected-tab">
+                  <a class="nav-link mx-lg-2" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">menu</a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">about us</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">store locator</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#"><button type="button" class="btn btn-success">talk to us</button></a>
+                  </li>                
+              </ul>              
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar ends here  -->
+    <!-- upper section starts here  -->
+    <section class="container-fluid g-0">
+        <div class="upper-section">
+            <div class="overlay"></div>
+            <div class="tagline container">
+                <img src="https://subway.in/static/media/HeadlineText.8292d992045c9f61efa6.webp" alt="">
+            </div>
+            <h1 class="container">meet the grills</h1>
+            <div class="container ">
+                <div class="row menu-imgs">
+                    <div class="col-lg-4 col-md-6 img-container" onclick="showModal()">                        
+                        <a href="" class="menu-item"><img src="https://subway.in/static/media/BombayGrillDP.86e875d6d6fc0ca04831.webp" class="img-fluid" style="max-width: 28rem" alt="" ></a>
+                        <p style="color: white;">Bombay Grill</p>
+                        <div class="item-info" >
+                            <span>&times</span>
+                            <img src="https://subway.in/static/media/BombayGrillDP.86e875d6d6fc0ca04831.webp" class="item-img" alt="...">
+                            <div class="info-body">                              
+                              <p class="item-desc">The classic Bombay sandwich in grilled Italian white bread loaded with tomato, cucumber, onion, capsicum, coriander & green chillies chutney and a whole lotta love.</p>
+                              <p class="item-desc">Allergens - Contains wheat and milk.</p>
+                              <p class="item-desc">219 g / 443 kcal.</p>
+                              <h6 >START GRILLING ON</h6>
+                              <a href="https://www.swiggy.com/city/bangalore" ><img src="https://subway.in/static/media/swiggy.720f8f764788f0988289.webp" alt="" style="width: 35%;"></a>
+                              <a href="https://www.zomato.com/bangalore" ><img src="https://subway.in/static/media/zomato.4e0f3920926bf9e420d5.webp" alt="" style="width: 35%;"></a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 img-container">
+                        <img src="https://subway.in/static/media/DelhiTikkiDP.1179986289366d6b7a16.webp" class="img-fluid" style="max-width: 28rem" alt="">
+                        <p style="color: white;">Delhi Tikki</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 img-container">
+                        <img src="https://subway.in/static/media/ThreeCheeseMeltDP.33f90f04a504d2c324b3.webp" class="img-fluid" style="max-width: 28rem" alt="">
+                        <p style="color: white;">Three Cheese Melt</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 img-container">
+                        <img src="https://subway.in/static/media/ChickenKeemsDP.076bc1b9ca1d6c3028fe.webp" class="img-fluid"  style="max-width: 28rem" alt="">
+                        <p style="color: white;">Chicken Keema</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 img-container">
+                        <img src="https://subway.in/static/media/RoastChickenMeltDP.4a2bd50d33283a91ea67.webp" class="img-fluid" style="max-width: 28rem" alt="">
+                        <p style="color: white;">Roast Chicken Melt</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 img-container">
+                        <img src="https://subway.in/static/media/Egg&CheeseDP.8ff95c4578be871a8ae4.webp" class="img-fluid" style="max-width: 28rem" alt="">
+                        <p style="color: white;">Egg 'n Cheese</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="chefs-spl" >
+                <div class="menu-half-circle">
+                    <img src="https://subway.in/static/media/chef-special-logo.c35b4155c1e217aeff84.webp" alt="" >
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- upper section ends here  -->
+
+    <!-- chefs special section starts here  -->
+    <section class="container-fluid">
+        <div class="menu-part container">
+            <div class="tagline">
+                <img src="https://subway.in/static/media/discover-text.4591a587a45ebf25751c.webp" alt="">
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+               
+                <div class="col-lg-4 col-md-6 menu-container g-0" >
+                    <img src="https://subway.in/static/media/ChilliCheeseDP.67de354cf250e1ab15aa.webp" class="img-fluid" >
+                    <h5>Chilli Cheese</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-container g-0">
+                    <img src="https://subway.in/static/media/PaneerAchariDP.3b7ab38d0969fdf9dcb2.webp" alt="" class="img-fluid">
+                    <h5>Paneer Achari</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-container g-0">
+                    <img src="https://subway.in/static/media/CrunchyMexicanDP.db3d51de8987c302270a.webp" alt="" class="img-fluid">
+                    <h5>Crunchy Mexican</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-container g-0">
+                    <img src="https://subway.in/static/media/ChickenTikkaAchariDP.19f5470adb3e770ac4e1.webp" alt="" class="img-fluid">
+                    <h5>Chicken Tikka Achari</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-container g-0">
+                    <img src="https://subway.in/static/media/PepperChickenDP.1c6ce55cdb2cdf4c00e5.webp" alt="" class="img-fluid">
+                    <h5>Pepper Chicken with dip</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-container g-0">
+                    <img src="https://subway.in/static/media/AmericanBBQDP.624675fe9e3883b54416.webp" alt="" class="img-fluid" style="width: 25rem;">
+                    <h5>Great American BBQ</h5>
+                </div>
+                <div class="chefs-spl">
+                    <img src="https://subway.in/static/media/discover-more-text.1bf2c195faacb9eaea5a.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- chefs spl ends here  -->
+    <!-- accordion starts here  -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              CREATE YOUR OWN SUB
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body d-flex justify-content-between">              
+                  <div class="veg-menu d-flex flex-column align-items-end">
+                      <img src="https://subway.in/static/media/VegSub.88f309ad394eba24821e.webp" alt="">
+                      <div class="menu">
+                          <h5>Veggie Delite</h5>
+                          <h5>Aloo Patty</h5>
+                          <h5>Corn & Peas</h5>
+                          <h5>Paneer Tikka</h5>
+                          <h5>Chilli Bean Patty</h5>
+                          <h5>Spinach 'n Cheese</h5>
+                      </div>
+                  </div>
+                      <div class="non-veg-menu">
+                          <img src="https://subway.in/static/media/NonVegSub.a700f38496c4fb0024f8.webp" alt="">
+                          <div class="menu">
+                              <h5>Veggie Delite</h5>
+                              <h5>Aloo Patty</h5>
+                              <h5>Corn & Peas</h5>
+                              <h5>Paneer Tikka</h5>
+                              <h5>Chilli Bean Patty</h5>
+                              <h5>Spinach 'n Cheese</h5>
+                          </div>
+                      </div>
+              
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            SALADS AND WRAPS
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body d-flex flex-column ">
+            <div class="d-flex justify-content-between">
+            <div class=" veg-menu d-flex flex-column align-items-end">
+              <img src="https://subway.in/static/media/Salad.baf8e91a384607412e99.webp" alt="" class="img-fluid">                          
+          </div>
+          <div class=" non-veg-menu ">
+            <img src="https://subway.in/static/media/Wrap.f9061af882dc68f4c03a.webp" alt="" class="img-fluid">                              
+          </div>
+          </div>
+          <div>
+            <p  class="hero-text-para text-black position-absolute" style="top: 40%;">order now on</p>
+            <div  class="order-btns d-flex gap-2" style="width: 20%;height: 10%; top: 80%;">
+              <a href="" class="order-btn" >
+              <img src="https://subway.in/static/media/swiggy.720f8f764788f0988289.webp" alt="" class="img-fluid"  >
+              </a>
+              <a href="" class="order-btn">
+              <img src="https://subway.in/static/media/zomato.4e0f3920926bf9e420d5.webp" alt="" class="img-fluid">
+              </a>                  
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <span class="container-fluid ">
+        <div class="container d-flex text-capitalize justify-content-between align-items-center">
+        <img src="https://subway.in/static/media/FireEMOJI.926ccc01696583d29827.webp" alt="" style="width: 3.5rem;height: 4.5rem;">
+        <p>NEW NEW NEW CRISPERS</p>
+        <img src="https://subway.in/static/media/FireEMOJI.926ccc01696583d29827.webp" alt="" style="width: 3.5rem;height: 4.5rem;">
+        <p>MUNCH-MUNCH</p>
+        <img src="https://subway.in/static/media/FireEMOJI.926ccc01696583d29827.webp" alt="" style="width: 3.5rem;height: 4.5rem;">
+        <p>CAN’T STOP AT JUST ONE</p>
+        </div>
+      </span>
+      <section class="container-fluid d-flex">
+        <div class="crispers container" >
+        <p>INTRODUCING</p>
+        <P class="bold">CRISPERS</P>
+        </div>
+        <div style="width: 100%;">
+            <img src="https://subway.in/static/media/Crispers.c90a81bf24c63d311ce9.webp" alt="" style="width: 100%;">
+        </div>
+      </section>
+      <footer>
+        <section class="container-fluid menu-page">
+            <div class="footer-top container">
+              <div class="footer-top container">
+                <div class="footer-logo position-absolute" style="top: -3rem;">
+                  <img src="https://subway.in/static/media/bg-logo.156dd4057cad7b2b1ee6.webp" alt="">
+              </div>
+                <div class="footer-col">
+                <div >
+                <p class="footer_header">contact</p>
+                <p class="footer-elem">customer care</p>
+                <p class="footer-elem">feedback</p>
+                </div>
+                <div >
+                    <p class="footer_header">subway cares</p>
+                    <p class="footer-elem">nutrition informtion</p>
+                    
+                </div>
+                <div>
+                    <p class="footer_header">legal</p>
+                    <p class="footer-elem">privacy policy</p>
+                    <p class="footer-elem">terms and conditions</p>
+                </div>
+            </div>
+            </div>
+            <hr class="container" >
+            <div class="container copyright">
+              All rights reserved. SUBWAY® is a Registered Trademark of Subway IP LLC. ©2022 Subway IP LLC., and is licensed to Eversub India Private Limited under an exclusive master franchisee arrangement for the territory of the Republic of India.
+            </div>
+
+        </section>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="script.js">
+        let overlay = document.querySelector(".overlay");
+let closeBtn = document.querySelector(span);
+let itemInfo = document.querySelector(".item-info");
+
+let menuItem = document.querySelector(".menu-item");
+
+function showModal(){
+    overlay.classList.add("showOverlay");
+    itemInfo.classList.add("showItemInfo");
+}
+
+menuItem.addEventListener("click", showModal);
+     </script>
+     
+</body>
+</html>

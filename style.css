@@ -1,0 +1,634 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* home page css */
+
+.navbar {
+    padding: 1rem;
+    z-index: 1;
+}
+
+ .navbar-toggler{
+    border: none;
+    
+} 
+
+.navbar-toggler-icon{
+    background-position: right;
+    background-size: 20%;
+}
+
+
+.nav-item{
+    margin-right: 3rem;
+}
+
+.nav-link{
+    color: #008938;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    
+}
+
+
+
+/* .selected-tab{
+    
+        border-bottom: 3px solid #f2b700;
+} */
+
+.btn-success
+{
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    padding: .7rem 1.6rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .02857em;
+    background-color: #008938;
+}
+
+.hero{
+    background: url("https://subway.in/static/media/home-img.b9f002c87c9b2888dfe4.webp") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-text{
+    width: 100%;height: 100%;   
+    max-width: 30rem;
+}
+
+.hero-text-para{
+    color: white;
+    position: absolute;
+    text-transform: capitalize;
+    font-size:1.8rem;
+    margin: 8rem 0 3rem 0;
+}
+
+.order-btns{
+    height:auto;
+    width: 10%;
+    position: absolute;
+    top: 60%;
+    /* max-width: 30rem; */
+}
+.order-btns img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.video-container-large{
+    background-color: #ededed;
+}
+
+.video-container{      
+   width: 80rem; 
+   height:50rem; 
+   margin: 0 auto; 
+   display: flex; 
+   justify-content: center;
+   padding: 5rem 0;
+   
+}
+
+.video{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+footer{
+    position: relative;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    /* width: 90%; */
+}
+
+.footer-col{
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+    margin: 0 auto;
+    
+}
+
+.footer_header{
+    color: #008938;
+    margin-bottom: .5rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.footer-elem{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+footer hr{
+    display: block;
+    height: .1rem;
+    border-color: black;
+}
+
+.copyright{
+    font-size: 1.4rem;
+    margin: 0 auto;
+}
+
+
+/* Menu page css  */
+
+.upper-section{
+    background-image: url("https://subway.in/static/media/GrillsBG.663d1bcd8eb76f4ea275.webp") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.tagline img{
+    max-width: 60%;
+    padding: 5rem 0;
+}
+
+.upper-section h1{
+    text-transform: uppercase;
+    color: white;
+    /* padding: 0 5rem; */
+}
+
+
+.img-container{   
+   padding: 2rem;
+} 
+
+.img-container p{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.showOverlay{
+    z-index: 2;
+    opacity: 1;
+}
+
+.item-info{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 5rem 2rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    max-width: 40%;
+    opacity: 0;
+    
+}
+
+.showItemInfo{
+    opacity: 1;
+}
+
+.item-info img{
+    max-width: 25rem;
+}
+.info-body p{
+    font-size: 1.3rem;
+    margin:0;
+    padding: 1rem 0 0 0;
+
+}
+
+.item-info span{
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    height: 3rem;
+    width: 3rem;
+    font-size:4rem;
+}
+
+.item-info h6{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.chefs-spl{
+  text-align: center;
+}
+
+.menu-container{    
+    border-radius: 2.1rem;
+    box-shadow: -1px 1px 5px 0 rgba(0,0,0,.252);
+    height:35rem;
+    width: 25rem;
+    margin-right: 12rem;
+    margin-bottom:10rem ;
+    background: #ffffff;
+    position: relative;
+}
+
+.menu-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.menu-container h5{
+    position: absolute;
+    bottom: -.7rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    background: #ffffff;
+    padding-top: 2rem;
+    padding-left: 1.2rem;
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-bottom: .5rem;
+    
+    
+}
+.accordion-button{
+    font-size: 2.5rem;
+    background-color: #008938;
+    color: #ffffff;
+}
+
+
+.accordion-button:not(.collapsed){
+    background-color: #008938;
+    color: #ffffff;
+}
+
+
+.accordion-body{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.accordion-body img{
+    width: 35rem;
+}
+
+.menu h5{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+span p{
+    font-size: 2rem;
+    color: #008938;
+    padding: 3rem 0;
+    
+}
+
+.crispers{
+    font-size: 5rem;
+    color: #008938;
+    margin: 0 auto;
+}
+
+.crispers .bold{
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.menu-page{
+    background-color: #008938;
+    color: #ffffff;
+}
+
+.menu-page .footer_header{
+    color: #f2b700
+    
+}
+
+.menu-page hr{
+    height: .2rem;
+   border-color:  #ffffff;
+}
+
+
+/* about us page  */
+.about-us-container{
+    background-color: #ededed;
+}
+.about-us{
+    padding: 10rem 0;
+}
+.about-us p{
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.about-us img{
+    width: 90%;
+}
+
+.footer-logo{
+    
+    position: absolute;
+    right: 5rem;
+    top: -2rem;
+   
+}
+
+.footer-logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+/* store locator page  */
+.store-locator-container{
+    background-color: #008938;
+    padding:2rem;
+}
+
+.store-locator-container h2{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+
+.select{
+    width: 25%;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.store-locator .btn{
+    width: 8rem;
+    font-size: 1.5rem;
+}
+
+.food-img-container{
+    background-color: #ededed;
+
+}
+
+
+/* talk to us page  */
+
+.talktous-container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 5rem;
+}
+.talktous-container p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.form-container{
+    gap: 2rem;
+    width: 100%;
+}
+
+.form-container input{
+    padding: 1rem ;
+    font-size: 1.3rem;   
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: .5rem;
+}
+
+label{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 767px) {
+    
+
+    html{
+        font-size: 45%;
+    }
+
+    body{
+        height: 100vh;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 25rem;
+    }
+
+    .navbar-nav{
+        width: 100%;
+    }
+    .offcanvas-header{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .offcanvas-title{
+        display: flex;
+        justify-content: center;
+    } */
+    .offcanvas-header img{
+        width: 15rem;
+        height: 7.5rem;
+    }
+
+    .offcanvas-body .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-end; */
+        align-items: flex-start;
+    }
+
+    /* .navbar-toggler{
+        font-size: 2rem;
+        font-weight: 700;
+    } */
+    
+    .hero-left{
+        padding-left: 3rem;
+    }
+    .hero{
+    
+    background: url("https://subway.in/static/media/mobile-home-img.50492b53f35e6048d3fa.webp") no-repeat;
+        background-size: cover;
+        background-position:center ;
+        width: 100%;
+        height: 50rem ;   }
+
+        .hero-text-para{           
+            font-size:1rem;
+            margin: 15rem 0 3rem 0;
+           
+        }
+
+       
+
+        .order-btns{
+            max-width:15% ;
+            position: absolute;
+            top: 50%;
+            
+        }
+
+      .store-form{
+        flex-direction: column;
+      }
+
+        
+
+    .video-container{      
+        width: 100%;
+        height:25rem;
+        margin: 0 auto; 
+        display: flex; 
+        justify-content: center;
+        padding: 2rem ;
+        overflow-y: hidden;
+        
+     }
+     .video{
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-col{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start;
+        align-items: center; */
+        gap: 2rem;
+        
+    }   
+
+    .item-info{
+        top: 10%;
+    }
+   
+    .accordion-body{
+       flex-direction: column;
+    }
+
+    
+    .about-us img{
+        margin-left: 20rem;
+    }
+
+    .store-locator{
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .select{
+        width: 100%;
+    }
+
+    .talktous-container{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    html{
+        font-size:55%;
+    }
+    .offcanvas.offcanvas-end {
+        width: 35rem;
+    }
+
+    .navbar-nav{
+        width: 100%;
+    }
+    .offcanvas-header{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .offcanvas-header img{
+        width: 15rem;
+        height: 7.5rem;
+    }
+
+    
+    .hero{
+    
+        background: url("https://subway.in/static/media/mobile-home-img.50492b53f35e6048d3fa.webp") no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 100vh;
+        }
+        .order-btns{
+            width:15% ;
+            top: 60%;
+        }
+        .item-info{
+            top: 20%;
+        }
+
+        .chefs-spl{
+            text-align: center;
+          }
+    
+          .talktous-container{
+            width: 70%;
+        }
+    
+}
